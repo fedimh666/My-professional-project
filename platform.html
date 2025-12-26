@@ -1,0 +1,145 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CTH Academy</title>
+  <link rel="shortcut icon" href="images/icon.png" type="">
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  body {font-family: 'Open Sans', sans-serif; margin:0; padding:0; background:#f4f4f4;}
+  a {text-decoration:none; color:#333;}
+  /* Navbar */
+  nav {background:#111; color:#fff; display:flex; justify-content:space-between; align-items:center; padding:1rem 2rem;}
+  nav .logo {font-weight:bold; font-size:1.2rem;}
+  nav ul {list-style:none; display:flex; gap:1.5rem; margin:0;}
+  nav ul li a {color:#fff; transition:0.3s;}
+  nav ul li a:hover {color:#ff6600;}
+
+  /* Hero */
+  .hero {background:#222 url('https://images.unsplash.com/photo-1555949963-aa79dcee9812?auto=format&fit=crop&w=1470&q=80') center/cover no-repeat; color:#fff; text-align:center; padding:6rem 2rem;}
+  .hero h1 {font-size:3rem; margin-bottom:1rem;}
+  .hero p {font-size:1.2rem; margin-bottom:2rem;}
+  .hero button {padding:0.8rem 2rem; font-size:1rem; background:#ff6600; color:#fff; border:none; border-radius:5px; cursor:pointer; transition:0.3s;}
+  .hero button:hover {background:#e65c00;}
+
+  /* Courses */
+  .courses {padding:4rem 2rem; text-align:center;}
+  .courses h2 {font-size:2rem; margin-bottom:2rem;}
+  .course-cards {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:2rem;}
+  .card {background:#fff; border-radius:10px; padding:1.5rem; box-shadow:0 4px 10px rgba(0,0,0,0.1);}
+  .card img {width:100%; border-radius:10px; margin-bottom:1rem;}
+  .card h3 {margin-bottom:0.5rem;}
+  .card p {font-size:0.9rem; margin-bottom:0.5rem;}
+  .card .status {display:inline-block; padding:0.3rem 0.7rem; font-size:0.8rem; border-radius:5px; background:#ff6600; color:#fff;}
+
+  /* Why Section */
+  .why {padding:4rem 2rem; background:#eee; text-align:center;}
+  .why h2 {font-size:2rem; margin-bottom:2rem;}
+  .why ul {list-style:none; padding:0;}
+  .why ul li {margin-bottom:1rem; font-size:1.1rem;}
+
+  /* Dashboard */
+  .dashboard {padding:4rem 2rem; text-align:center;}
+  .dashboard h2 {font-size:2rem; margin-bottom:2rem;}
+  .dashboard .stats {display:flex; justify-content:center; gap:2rem; flex-wrap:wrap;}
+  .dashboard .stats div {background:#fff; padding:2rem; border-radius:10px; box-shadow:0 4px 10px rgba(0,0,0,0.1);}
+  .dashboard .stats div h3 {margin-bottom:1rem;}
+  .dashboard button {margin-top:1rem; padding:0.7rem 1.5rem; background:#ff6600; color:#fff; border:none; border-radius:5px; cursor:pointer;}
+
+  /* Footer */
+  footer {background:#111; color:#fff; text-align:center; padding:2rem;}
+</style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav>
+  <div class="logo">Creative Tech Helper</div>
+  <ul>
+    <li><a href="index.html">Home</a></li>
+    <li><a href="tech.html">About</a></li>
+    <li><a href="#">CTH Academy</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <h1>CTH Academy – Learn. Create. Grow.</h1>
+  <p>A future online learning platform for coding, design & AI tools.</p>
+  <button>Enter Academy</button>
+</section>
+
+<!-- Courses Section -->
+<section class="courses">
+  <h2>Our Courses</h2>
+  <div class="course-cards">
+    <div class="card">
+      <img src="images/html.jpg" alt="HTML CSS">
+      <h3>HTML & CSS for Beginners</h3>
+      <p>10 lessons | Level: Beginner</p>
+      <span class="status">Coming Soon</span>
+    </div>
+    <div class="card">
+      <img src="images/js.jpg" alt="JS">
+      <h3>JavaScript Interactive Design</h3>
+      <p>Build interactive UI | Level: Intermediate</p>
+      <span class="status">Coming Soon</span>
+    </div>
+    <div class="card">
+      <img src="images/uiux.jpg" alt="UI/UX">
+      <h3>UI/UX Crash Course</h3>
+      <p>Wireframing, prototyping | Level: Beginner</p>
+      <span class="status">Coming Soon</span>
+    </div>
+    <div class="card">
+      <img src="images/sql.jpg" alt="PHP SQL">
+      <h3>PHP & SQL Basics</h3>
+      <p>Database & server-side coding | Level: Intermediate</p>
+      <span class="status">Coming Soon</span>
+    </div>
+    <div class="card">
+      <img src="images/ai.jpg" alt="AI Tools">
+      <h3>AI Tools Mastery</h3>
+      <p>Generative AI, automation | Level: All Levels</p>
+      <span class="status">Coming Soon</span>
+    </div>
+  </div>
+</section>
+
+<!-- Why CTH Academy -->
+<section class="why">
+  <h2>Why CTH Academy?</h2>
+  <ul>
+    <li>Learn fast: دروس قصيرة وواضحة.</li>
+    <li>Build real projects: كل درس فيه تطبيق.</li>
+    <li>Boost creativity: ندمج بين design + tech + AI.</li>
+  </ul>
+</section>
+
+<!-- Dashboard Mockup -->
+<section class="dashboard">
+  <h2>User Dashboard</h2>
+  <div class="stats">
+    <div>
+      <h3>Your Progress</h3>
+      <p>0%</p>
+      <button>Continue Learning</button>
+    </div>
+    <div>
+      <h3>Your Certificates</h3>
+      <p>None</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  © Creative Tech Helper — 2025<br>
+  Future Learning Starts Here
+</footer>
+
+</body>
+</html>
